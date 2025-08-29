@@ -1,0 +1,42 @@
+{
+  "name": "jizy-factory",
+  "version": "2.1.0",
+  "browser": "dist/js/jizy-factory.min.js",
+  "main": "lib/index.js",
+  "type": "module",
+  "jizy": "dist/",
+  "files": [
+    "dist/*",
+    "lib/*"
+  ],
+  "scripts": {
+    "jpack:export": "node ./cli/jpack.js --action build --name perso",
+    "jpack:export-debug": "node ./cli/jpack.js --action build --name perso --debug",
+    "jpack:dist": "node ./cli/jpack.js",
+    "jpack:dist-debug": "node ./cli/jpack.js --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joffreydemetz/jizy-factory.git"
+  },
+  "keywords": [
+    "JDZ",
+    "JiZy",
+    "Library"
+  ],
+  "author": "Joffrey Demetz <joffrey.demetz@gmail.com> (https://joffreydemetz.com/)",
+  "license": "MIT",
+  "description": "A lightweight JS library",
+  "devDependencies": {
+    "jizy-packer": "^2.1"
+  },
+  "dependencies": {
+    "jizy-api": "^2.1",
+    "jizy-data": "^2.1",
+    "jizy-messenger": "^2.1",
+    "jizy-storage": "^2.1",
+    "jizy-translate": "^2.1",
+    "jizy-url": "^2.1",
+    "jizy-utils": "^2.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "jdz/jizy-factory",
+    "type": "library",
+    "description": "A lightweight JS library",
+    "keywords": [
+        "JDZ",
+        "JS",
+        "JiZy",
+        "Library"
+    ],
+    "homepage": "https://jdz.joffreydemetz.com/jizy-factory",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joffrey Demetz",
+            "email": "joffrey.demetz@gmail.com",
+            "homepage": "https://joffreydemetz.com",
+            "role": "Lead"
+        }
+    ]
+}

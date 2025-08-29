@@ -1,0 +1,3 @@
+import Core from '{{PREFIX}}lib/js/Factory.js';
+
+export default Factory;
