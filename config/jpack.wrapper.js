@@ -1,17 +1,16 @@
-/*! jFactory v@VERSION | @DATE | [@BUNDLE] */
 (function (global) {
     "use strict";
 
     if (typeof global !== "object" || !global || !global.document) {
-        throw new Error("jFactory requires a window and a document");
+        throw new Error("JiZy requires a window and a document");
     }
 
-    if (typeof global.jFactory !== "undefined") {
-        throw new Error("jFactory is already defined");
+    if (typeof global.JiZy !== "undefined") {
+        throw new Error("JiZy is already defined");
     }
 
-    // @CODE 
+    // @CODE
 
-    global.jFactory = jFactory;
+    global.JiZy = JiZy;
 
 })(typeof window !== "undefined" ? window : this);

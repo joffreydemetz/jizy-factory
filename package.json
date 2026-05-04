@@ -1,6 +1,6 @@
 {
   "name": "jizy-factory",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "browser": "dist/js/jizy-factory.min.js",
   "main": "lib/index.js",
   "type": "module",
@@ -10,8 +10,6 @@
     "lib/*"
   ],
   "scripts": {
-    "jpack:export": "node ./cli/jpack.js --action build --name perso",
-    "jpack:export-debug": "node ./cli/jpack.js --action build --name perso --debug",
     "jpack:dist": "node ./cli/jpack.js",
     "jpack:dist-debug": "node ./cli/jpack.js --debug"
   },
@@ -28,7 +26,7 @@
   "license": "MIT",
   "description": "A lightweight JS library",
   "devDependencies": {
-    "jizy-packer": "^2.1"
+    "jizy-packer": "^2.1.44"
   },
   "dependencies": {
     "jizy-api": "^2.1",
@@ -37,6 +35,7 @@
     "jizy-storage": "^2.1",
     "jizy-translate": "^2.1",
     "jizy-url": "^2.1",
-    "jizy-utils": "^2.1"
+    "jizy-utils": "^2.2",
+    "jizy-logger": "^2.1"
   }
 }
