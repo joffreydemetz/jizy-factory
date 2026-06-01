@@ -1,4 +1,6 @@
+build/
 cli/
 config/
 node_modules/
+tests/
 package-lock.json
