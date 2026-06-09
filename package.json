@@ -1,13 +1,13 @@
 {
   "name": "jizy-factory",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "browser": "dist/js/jizy-factory.min.js",
   "main": "lib/index.js",
   "type": "module",
   "jizy": "dist/",
   "author": "Joffrey Demetz <joffrey.demetz@gmail.com> (https://joffreydemetz.com/)",
   "license": "MIT",
-  "description": "JiZy browser namespace: facade over the jizy-* utilities + opt-in plugins (user, tokenizer, tracker, confirm).",
+  "description": "JiZy browser namespace: facade over the jizy-* utilities + opt-in plugins (user, tokenizer, tracker).",
   "keywords": [
     "JDZ",
     "JiZy",
