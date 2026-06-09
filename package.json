@@ -1,6 +1,6 @@
 {
   "name": "jizy-factory",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "browser": "dist/js/jizy-factory.min.js",
   "main": "lib/index.js",
   "type": "module",
