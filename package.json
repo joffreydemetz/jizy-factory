@@ -26,26 +26,26 @@
     "url": "git+https://github.com/joffreydemetz/jizy-factory.git"
   },
   "dependencies": {
-    "jizy-api": "^2.1.8",
-    "jizy-browser": "^2.1.8",
-    "jizy-cooky": "^2.1.11",
-    "jizy-data": "^2.2.0",
-    "jizy-dom": "^2.1.8",
-    "jizy-logger": "^2.1.5",
-    "jizy-messenger": "^2.1.9",
-    "jizy-modalizer": "^3.0.5",
-    "jizy-niceselect": "^1.0.6",
-    "jizy-obfuscator": "^1.0.5",
-    "jizy-reveal": "^2.1.4",
-    "jizy-storage": "^2.1.5",
-    "jizy-template": "^2.0.0",
-    "jizy-tooltip": "^2.2.1",
-    "jizy-translate": "^2.1.9",
-    "jizy-url": "^2.2.0",
-    "jizy-utils": "^2.2.1",
-    "jdzcaptcha": "^2.0.5"
+    "jizy-api": "^2.2",
+    "jizy-browser": "^2.2",
+    "jizy-cooky": "^2.1",
+    "jizy-data": "^2.2",
+    "jizy-dom": "^2.5",
+    "jizy-logger": "^2.1",
+    "jizy-messenger": "^2.2",
+    "jizy-modalizer": "^4.0",
+    "jizy-niceselect": "^1.0",
+    "jizy-obfuscator": "^1.0",
+    "jizy-reveal": "^2.2",
+    "jizy-storage": "^2.1",
+    "jizy-template": "^2.0",
+    "jizy-tooltip": "^2.2",
+    "jizy-translate": "^2.1",
+    "jizy-url": "^2.2",
+    "jizy-utils": "^2.2",
+    "jdzcaptcha": "^2.0"
   },
   "devDependencies": {
-    "jizy-packer": "^2.1.44"
+    "jizy-packer": "^2.2.0"
   }
 }
