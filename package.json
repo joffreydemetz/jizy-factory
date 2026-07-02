@@ -1,6 +1,6 @@
 {
   "name": "jizy-factory",
-  "version": "4.2.3",
+  "version": "4.2.4",
   "browser": "dist/js/jizy-factory.min.js",
   "main": "lib/index.js",
   "type": "module",
@@ -42,8 +42,7 @@
     "jizy-tooltip": "^2.2",
     "jizy-translate": "^2.1",
     "jizy-url": "^2.2",
-    "jizy-utils": "^2.2",
-    "jdzcaptcha": "^2.0"
+    "jizy-utils": "^2.2"
   },
   "devDependencies": {
     "jizy-packer": "^2.2.0"
