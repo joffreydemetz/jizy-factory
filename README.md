@@ -118,7 +118,7 @@ URL:
 
 Events:
 - `event(name, { bubbles = true, cancelable = true, detail = {} })` — builds a `CustomEvent` to dispatch.
-- `pressedEnter(e)`, `pressedEscape(e)` — keyboard checks. Known issue in 4.2.5: they call `KeyPress.on()` on the jizy-utils class rather than on an instance, and throw a `TypeError`; use `new KeyPress().Enter(e)` from `jizy-utils` meanwhile.
+- `pressedEnter(e)`, `pressedEscape(e)` — keyboard checks (`true` when the event's key matches). In 4.2.5 they threw a `TypeError`; fixed in 4.2.6.
 
 ## Extending via `use(plugin, opts)`
 
@@ -145,10 +145,9 @@ dist bundle, and they are not `use()` plugins: import or concatenate the ones yo
 | File | What |
 |---|---|
 | `user.js` | ES module, default export `User`: polls a callback (`setCaller(fn)`, `setInterval(ms)`, `init()`) to check the session; `updateUser(uid)` reloads the page when a login happened in another tab; `stopChecking()` / `restartChecking()`. |
-| `tokenizer.js` | ES module, default export `Tokenizer`: the same polling shape for a form token; `updateToken(token)` writes it into every `input[name='t']`. Known issue in 4.2.5: `check()` calls itself instead of scheduling `doCheck()`, so `init()` overflows the stack. |
+| `tokenizer.js` | ES module, default export `Tokenizer`: the same polling shape for a form token; `updateToken(token)` writes it into every `input[name='t']`. (In 4.2.5 `check()` called itself and `init()` overflowed the stack; fixed in 4.2.6.) |
 | `tracker.js` | ES module, default export `jTracker`: named tracking callbacks (`add(name, fn)`, `setTrackers({...})`); `track(eventName, data)` calls each one. |
 | `dropzone.js` | Raw script: sets `JiZy.DropzoneConfig`, French-language defaults for the jizy-dom `userDropzone` plugin, and turns off `Dropzone.autoDiscover`. |
-| `templateCallbacks.js` | Raw script, legacy: relies on `JiZy.Template.addResponseCallbacks` and `JiZy.Unobfuscate`, which the factory does not define. |
 
 The `confirm` dialog moved to jizy-modalizer (`Modalizer.confirm`) in 4.2.3.
 
